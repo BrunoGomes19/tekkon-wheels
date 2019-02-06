@@ -53,14 +53,14 @@ public with sharing class ProductController {
         PagedResult result =  new PagedResult();
         result.pageSize = pageSize;
         result.pageNumber = pageNumber;
-        result.totalItemCount = Database.countQuery('SELECT count() FROM Product__c ' + whereClause);
-        result.records = Database.query('SELECT Id, Name, MSRP__c, Description__c, Category__c, Level__c, Picture_URL__c, Material__c FROM Product__c ' + whereClause + ' ORDER BY Name LIMIT :pageSize OFFSET :offset');
+        result.totalItemCount = Database.countQuery('SELECT count() FROM Product2 ' + whereClause);
+        result.records = Database.query('SELECT Id, Name, product_image__c FROM Product2');
         return result;
     }
 
     @AuraEnabled(Cacheable=true)
-    public static Product__c[] getSimilarProducts(Id productId, Id familyId) {
-        return [SELECT Id, Name, MSRP__c, Description__c, Category__c, Level__c, Picture_URL__c, Material__c FROM Product__c WHERE Product_Family__c=:familyId AND Id!=:productId];
+    public static Product2[] getSimilarProducts(Id productId) { //1
+        return [SELECT Id, Name, product_image__c FROM Product2];
     }
 
 }
