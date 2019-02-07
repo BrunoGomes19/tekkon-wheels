@@ -9,13 +9,13 @@ import { getRecord } from 'lightning/uiRecordApi';
 import { registerListener, unregisterAllListeners } from 'c/pubsub';
 
 /** Product__c Schema. */
-import PRODUCT_OBJECT from '@salesforce/schema/Product__c';
-import NAME_FIELD from '@salesforce/schema/Product__c.Name';
+import PRODUCT_OBJECT from '@salesforce/schema/Product2';
+import NAME_FIELD from '@salesforce/schema/Product2.Name';
 import LEVEL_FIELD from '@salesforce/schema/Product__c.Level__c';
-import CATEGORY_FIELD from '@salesforce/schema/Product__c.Category__c';
-import MATERIAL_FIELD from '@salesforce/schema/Product__c.Material__c';
-import MSRP_FIELD from '@salesforce/schema/Product__c.MSRP__c';
-import PICTURE_URL_FIELD from '@salesforce/schema/Product__c.Picture_URL__c';
+import CATEGORY_FIELD from '@salesforce/schema/Product2.Category__c';
+import MATERIAL_FIELD from '@salesforce/schema/Product2.Material__c';
+import MSRP_FIELD from '@salesforce/schema/Product2.Total__c';
+import PICTURE_URL_FIELD from '@salesforce/schema/Product2.Picture_URL__c';
 
 /** Record fields to load. */
 const fields = [

@@ -4,7 +4,7 @@
             <span slot="title">{product.data.fields.Name.value}</span>
             <lightning-button-icon icon-name="utility:expand_alt" slot="actions" onclick={handleNavigateToRecord}></lightning-button-icon>
             <div class="slds-m-horizontal_medium">
-                <img src={product.data.fields.Picture_URL__c.value} class="product" alt="Product picture">
+                <img src={product.Picture_URL__c} class="product" alt="Product picture">
                 <div class="row">
                     <div>Category:</div>
                     <div>{product.data.fields.Category__c.value}</div>
