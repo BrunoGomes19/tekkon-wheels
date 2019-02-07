@@ -1,9 +1,9 @@
 import { LightningElement, wire } from 'lwc';
 import { CurrentPageReference } from 'lightning/navigation';
 import { getPicklistValues } from 'lightning/uiObjectInfoApi';
-import CATEGORY_FIELD from '@salesforce/schema/Product__c.Category__c';
+import CATEGORY_FIELD from '@salesforce/schema/Product2.Category__c';
 import LEVEL_FIELD from '@salesforce/schema/Product__c.Level__c';
-import MATERIAL_FIELD from '@salesforce/schema/Product__c.Material__c';
+import MATERIAL_FIELD from '@salesforce/schema/Product2.product_material__c';
 
 /** Pub-sub mechanism for sibling component communication. */
 import { fireEvent } from 'c/pubsub';

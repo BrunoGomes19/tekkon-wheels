@@ -18,7 +18,18 @@ export default class ProductTile extends LightningElement {
         this._product = value;
         this.pictureUrl = value.Picture_URL__c;
         this.name = value.Name;
-        this.msrp = value.MSRP__c;
+
+        this.msrp = value.Total__c;
+
+        if(this.msrp === 0){
+
+            this.msrp = value.product_price__c;
+
+        }
+
+        
+
+
     }
 
     /** Product__c field values to display. */
