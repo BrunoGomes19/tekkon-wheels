@@ -54,13 +54,13 @@ public with sharing class ProductController {
         result.pageSize = pageSize;
         result.pageNumber = pageNumber;
         result.totalItemCount = Database.countQuery('SELECT count() FROM Product2 ' + whereClause);
-        result.records = Database.query('SELECT Id, Name, product_image__c, Picture_URL__c, Battery__c, Category__c, Charger__c, Fork__c, Frame__c, Front_Brake__c, Front_Wheel__c, Head_Set__c, Model_Material__c, Motor__c, Pedals__c, ProductCode, Description, Product_ID__c, product_material__c, product_price__c, Family, QuantityUnitOfMeasure, Rating__c, Rating_Text__c, Rear_Brake__c, Rear_Wheel__c, Saddle__c, Star_Rating__c, stock__c, StockKeepingUnit, Total__c FROM Product2' + whereClause + ' ORDER BY Name LIMIT :pageSize OFFSET :offset');
+        result.records = Database.query('SELECT Id, Name, product_image__c, Picture_URL__c, Battery__c, Category__c, Charger__c, Fork__c, Frame__c, Front_Brake__c, Front_Wheel__c, Head_Set__c, Model_Material__c, Motor__c, Pedals__c, ProductCode, Description, Product_ID__c, product_material__c, product_price__c, Family, QuantityUnitOfMeasure, Rating__c, Rating_Text__c, Rear_Brake__c, Rear_Wheel__c, Saddle__c, Star_Rating__c, stock__c, StockKeepingUnit, Total__c, Level__c FROM Product2' + whereClause + ' ORDER BY Name LIMIT :pageSize OFFSET :offset');
         return result;
     }
 
     @AuraEnabled(Cacheable=true)
     public static Product2[] getSimilarProducts(Id productId) { //1
-        return [SELECT Id, Name, product_image__c, Picture_URL__c, Battery__c, Category__c, Charger__c, Fork__c, Frame__c, Front_Brake__c, Front_Wheel__c, Head_Set__c, Model_Material__c, Motor__c, Pedals__c, ProductCode, Description, Product_ID__c, product_material__c, product_price__c, Family, QuantityUnitOfMeasure, Rating__c, Rating_Text__c, Rear_Brake__c, Rear_Wheel__c, Saddle__c, Star_Rating__c, stock__c, StockKeepingUnit, Total__c FROM Product2 WHERE Id!=:productId];
+        return [SELECT Id, Name, product_image__c, Picture_URL__c, Battery__c, Category__c, Charger__c, Fork__c, Frame__c, Front_Brake__c, Front_Wheel__c, Head_Set__c, Model_Material__c, Motor__c, Pedals__c, ProductCode, Description, Product_ID__c, product_material__c, product_price__c, Family, QuantityUnitOfMeasure, Rating__c, Rating_Text__c, Rear_Brake__c, Rear_Wheel__c, Saddle__c, Star_Rating__c, stock__c, StockKeepingUnit, Total__c, Level__c FROM Product2 WHERE Id!=:productId];
     }
 
 }
