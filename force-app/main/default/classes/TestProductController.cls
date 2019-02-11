@@ -3,7 +3,7 @@ public class TestProductController {
 
     @testSetup
     static void createProducts() {
-        List<Product__c> products = new List<Product__c>();
+        List<Product2> products = new List<Product2>();
 
         products.add(new Product__c(
                         Name='Sample Bike 1',

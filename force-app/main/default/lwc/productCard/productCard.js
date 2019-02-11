@@ -11,10 +11,10 @@ import { registerListener, unregisterAllListeners } from 'c/pubsub';
 /** Product__c Schema. */
 import PRODUCT_OBJECT from '@salesforce/schema/Product2';
 import NAME_FIELD from '@salesforce/schema/Product2.Name';
-import LEVEL_FIELD from '@salesforce/schema/Product__c.Level__c';
+import LEVEL_FIELD from '@salesforce/schema/Product2.Level__c';
 import CATEGORY_FIELD from '@salesforce/schema/Product2.Category__c';
 import MATERIAL_FIELD from '@salesforce/schema/Product2.product_material__c';
-import MSRP_FIELD from '@salesforce/schema/Product2.Total__c';
+import MSRP_FIELD from '@salesforce/schema/Product2.product_price__c';
 import PICTURE_URL_FIELD from '@salesforce/schema/Product2.Picture_URL__c';
 
 /** Record fields to load. */
@@ -54,6 +54,7 @@ export default class ProductCard extends NavigationMixin(LightningElement) {
      */
     handleProductSelected(productId) {
         this.recordId = productId;
+        console.log('itemName is ' +this.recordId);
     }
 
     handleNavigateToRecord() {

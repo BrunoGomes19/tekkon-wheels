@@ -11,7 +11,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Order_Item__c.Product__c</field>
+        <field>Order_Item__c.Product2</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -41,67 +41,67 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Battery__c</field>
+        <field>Product2.Battery__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Category__c</field>
+        <field>Product2.Category__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Charger__c</field>
+        <field>Product2.Charger__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Description__c</field>
+        <field>Product2.Description__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Fork__c</field>
+        <field>Product2.Fork__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Front_Brakes__c</field>
+        <field>Product2.Front_Brakes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Level__c</field>
+        <field>Product2.Level__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.MSRP__c</field>
+        <field>Product2.MSRP__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Material__c</field>
+        <field>Product2.Material__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Motor__c</field>
+        <field>Product2.Motor__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Picture_URL__c</field>
+        <field>Product2.Picture_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Product_Family__c</field>
+        <field>Product2.Product_Family__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Product__c.Rear_Brakes__c</field>
+        <field>Product2.Rear_Brakes__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -157,7 +157,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>Product__c</object>
+        <object>Product2</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
@@ -173,7 +173,7 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>Product__c</tab>
+        <tab>Product2</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

@@ -13,7 +13,7 @@
     <tabs>Product_Explorer</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
-    <tabs>Product__c</tabs>
+    <tabs>Product</tabs>
     <tabs>Order__c</tabs>
     <tabs>Product_Family__c</tabs>
     <uiType>Lightning</uiType>

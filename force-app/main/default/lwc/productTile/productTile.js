@@ -27,7 +27,6 @@ export default class ProductTile extends LightningElement {
 
         }
 
-        
 
 
     }
@@ -42,6 +41,8 @@ export default class ProductTile extends LightningElement {
             detail: this.product.Id
         });
         this.dispatchEvent(selectedEvent);
+           // eslint-disable-next-line no-alert
+           alert(this.product.Id);
     }
 
     handleDragStart(event) {
